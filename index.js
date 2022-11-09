@@ -75,7 +75,7 @@ async function getDataFromTxnHash() { //MAIN function
         try {
             let count=0;
             let flag=true;
-            let page=1;
+            let page=11639;
             await db("mongodb://sam:samiscool@34.132.190.198")
             while(flag){
                 var {txnHashList, blockTimestampList, pageReturned} = await getTxnHashList(address,page);
